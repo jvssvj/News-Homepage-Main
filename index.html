@@ -7,53 +7,90 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <link rel="stylesheet" href="css/index.css">
-  <script src="dist/index-min.js" defer></script>
   
   <title>Frontend Mentor | News homepage</title>
 
-
 </head>
 <body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  <header class="news__header">
+    <nav class="news__header__nav">
+      <a href="#">
+        <img src="assets/images/logo.svg" alt="News Logo">
+      </a>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <ul class="news__header__nav__items">
+        <li class="news__header__nav__items__item-1">Home</li>
+        <li class="news__header__nav__items__item-2">New</li>
+        <li class="news__header__nav__items__item-3">Popular</li>
+        <li class="news__header__nav__items__item-4">Treding</li>
+        <li class="news__header__nav__items__item-5">Categories</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="news__grids">
+
+    <section class="news__grids__popular">
+      <picture class="news__grids__popular__img">
+        <source srcset="assets/images/image-web-3-mobile.jpg" media="(min-width:)">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="">
+      </picture>
+
+      <article class="news__grids__popular__txt">
+        <h1 class="news__grids__popular__txt__t">The Bright Future of Web 3.0?</h1>
+        <div class="news__grids__popular__txt__infos">
+          <p class="news__grids__popular__txt__infos__p">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button class="news__grids__popular__txt__infos__btn-read-more">Read more</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="news__grids__new">
+      <h2 class="news__grids__new__t"></h2>
+
+      <article class="news__grids__new-1">
+        <h3 class="news__grids__new-1__t">Hydrogen VS Electric Cars</h3>
+        <p class="news__grids__new-1__p">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      
+      <article class="news__grids__new-2">
+        <h3 class="news__grids__new-2__t">The Downsides of AI Artistry</h3>
+        <p class="news__grids__new-2__p">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+
+      <article class="news__grids__new-3">
+        <h3 class="news__grids__new-3__t">Is VC Funding Drying Up?</h3>
+        <p class="news__grids__new-3__p">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+
+    <section class="news__grids__trending">
+
+      <article class="news__grids__trending-1">
+        <img class="news__grids__trending-1__img" src="assets/images/image-retro-pcs.jpg" alt="Retro pcs">
+        <span class="news__grids__trending-1__num">01</span>
+        <h4 class="news__grids__trending-1__t">Reviving Retro PCs</h4>
+        <p class="news__grids__trending-1__p">What happens when old PCs are given modern upgrades?</p>
+      </article>
+
+      <article class="news__grids__trending-2">
+        <img class="news__grids__trending-2__img" src="assets/images/image-top-laptops.jpg" alt="Top laptops">
+        <span class="news__grids__trending-2__num">02</span>
+        <h4 class="news__grids__trending-2__t">Top 10 Laptops of 2022</h4>
+        <p class="news__grids__trending-2__p">Our best picks for various needs and budgets.</p>
+      </article>
+
+      <article class="news__grids__trending-3">
+        <img class="news__grids__trending-3__img" src="assets/images/image-gaming-growth.jpg" alt="Gaming growth">
+        <span class="news__grids__trending-3__num">03</span>
+        <h4 class="news__grids__trending-3__t">The Growth of Gaming</h4>
+        <p class="news__grids__trending-3__p">How the pandemic has sparked fresh opportunities.</p>
+      </article>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    <p >Challenge by <a href="https://www.frontendmentor.io/profile/jvssvj" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a></p>
+  </footer>
 </body>
 </html>
