@@ -35,7 +35,7 @@
 |||
 | :----- | :----- |
 | Solution URL: | [Frontend Mentor - News homepage](https://www.frontendmentor.io/solutions/news-homepage-anjOVEfGo3) |
-| Live Site URL: | <a target href="https://news-homepage-main-tau-lime.vercel.app/" target="_blank">News homepage</a>
+| Live Site URL: | <a target href="https://news-homepage-main-six-drab.vercel.app/" target="_blank">News homepage</a>
 |||
 
 <br>
