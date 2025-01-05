@@ -8,6 +8,7 @@
   
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/indexResponsive.css">
+  <script src="public/index.js" defer></script>
   
   <title>Frontend Mentor | News homepage</title>
 
@@ -20,11 +21,11 @@
       <img src="assets/images/logo.svg" alt="News Logo">
     </a>
 
-    <button class="news__header__nav__menu" aria-expanded="false" aria-label="Open menu">
+    <div class="news__header__nav__menu" aria-expanded="false" aria-label="Open menu">
       <div class="news__header__nav__bar"></div>
       <div class="news__header__nav__bar"></div>
       <div class="news__header__nav__bar"></div>
-    </button>
+    </div>
     
     <nav class="news__header__nav">
       <ul class="news__header__nav__items">
@@ -39,92 +40,80 @@
 
   <main class="news__grids">
 
-    <section class="news__grids__popular__container">
+    <article class="news__grids__popular__container">
 
       <picture class="news__grids__popular__img">
         <source srcset="assets/images/image-web-3-mobile.jpg" media="(max-width:715px)">
         <img src="assets/images/image-web-3-desktop.jpg" alt="">
       </picture>
 
-      <article class="news__grids__popular__txt">
+      <section class="news__grids__popular__txt">
         <h1 class="news__grids__popular__txt__t">The Bright Future of Web 3.0?</h1>
         <div class="news__grids__popular__txt__infos">
           <p class="news__grids__popular__txt__infos__p">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
           <button class="news__grids__popular__txt__infos__btn">Read more</button>
         </div>
-      </article>
-    </section>
+      </section>
+    </article>
 
-    <section class="news__grids__new__container">
-      <h2 class="news__grids__new__t1">New</h2>
+    <article class="news__grids__new__container">
+      <span class="news__grids__new__t1">New</span>
 
-      <article class="news__grids__new">
-        <h3 class="news__grids__new__t">Hydrogen VS Electric Cars</h3>
+      <section class="news__grids__new">
+        <h2 class="news__grids__new__t">Hydrogen VS Electric Cars</h2>
         <p class="news__grids__new__p">Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </article>
+      </section>
+
       <hr>
-      <article class="news__grids__new">
-        <h3 class="news__grids__new__t">The Downsides of AI Artistry</h3>
+
+      <section class="news__grids__new">
+        <h2 class="news__grids__new__t">The Downsides of AI Artistry</h2>
         <p class="news__grids__new__p">What are the possible adverse effects of on-demand AI image generation?</p>
-      </article>
+      </section>
+
       <hr>
-      <article class="news__grids__new">
-        <h3 class="news__grids__new__t">Is VC Funding Drying Up?</h3>
+
+      <section class="news__grids__new">
+        <h2 class="news__grids__new__t">Is VC Funding Drying Up?</h2>
         <p class="news__grids__new__p">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </article>
-    </section>
+      </section>
+
+    </article>
   </main>
 
-  <section class="news__grids__trending__container">
+  <article class="news__grids__trending__container">
 
-    <article class="news__grids__trending">
+    <section class="news__grids__trending">
       <img class="news__grids__trending__img" src="assets/images/image-retro-pcs.jpg" alt="Retro pcs">
       <div class="news__grids__trending__txt">
         <span class="news__grids__trending__num">01</span>
-        <h4 class="news__grids__trending__t">Reviving Retro PCs</h4>
+        <h3 class="news__grids__trending__t">Reviving Retro PCs</h3>
         <p class="news__grids__trending__p">What happens when old PCs are given modern upgrades?</p>
       </div>
-    </article>
+    </section>
 
-    <article class="news__grids__trending">
+    <section class="news__grids__trending">
       <img class="news__grids__trending__img" src="assets/images/image-top-laptops.jpg" alt="Top laptops">
       <div class="news__grids__trending__txt">
         <span class="news__grids__trending__num">02</span>
-        <h4 class="news__grids__trending__t">Top 10 Laptops of 2022</h4>
+        <h3 class="news__grids__trending__t">Top 10 Laptops of 2022</h3>
         <p class="news__grids__trending__p">Our best picks for various needs and budgets.</p>
       </div>
-    </article>
+    </section>
 
-    <article class="news__grids__trending">
+    <section class="news__grids__trending">
       <img class="news__grids__trending__img" src="assets/images/image-gaming-growth.jpg" alt="Gaming growth">
       <div class="news__grids__trending__txt">
         <span class="news__grids__trending__num">03</span>
-        <h4 class="news__grids__trending__t">The Growth of Gaming</h4>
+        <h3 class="news__grids__trending__t">The Growth of Gaming</h3>
         <p class="news__grids__trending__p">How the pandemic has sparked fresh opportunities.</p>
       </div>
-    </article>
-  </section>
+    </section>
+
+  </article>
   
   <footer class="attribution">
     <p >Challenge by <a href="https://www.frontendmentor.io/profile/jvssvj" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a></p>
   </footer>
-
-
-  <script>
-    const menuIcon = document.querySelector('.news__header__nav__menu')
-    const menuModal = document.querySelector('.news__header__nav')
-    const menuItems = document.querySelector('.news__header__nav__items')
-    const overlay = document.querySelector('.overlay')
-
-    function toggleMenu() {
-      menuIcon.classList.toggle('open')
-      menuModal.classList.toggle('open__modal')
-      menuItems.classList.toggle('opacity__items__menu')
-      overlay.classList.toggle('open__overlay')
-    }
-
-    menuIcon.addEventListener('click', toggleMenu)
-  </script>
-
 </body>
 </html>

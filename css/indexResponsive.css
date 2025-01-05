@@ -19,6 +19,10 @@
         margin-top: 1.5rem;
     }
 
+    .news__grids__popular__img img {
+        height: unset;
+    }
+
     .news__grids__popular__txt__t {
         margin-bottom: 1.5rem;
     }
@@ -52,7 +56,7 @@
 
 @media(max-width:715px) {
     .news__grids__popular__txt__t {
-        font-size: var(--Font32px);
+        font-size: var(--Font44px);
     }
 
     .news__grids__trending__container {
@@ -81,6 +85,7 @@
         background-color: var(--Very-dark-blue);
         opacity: 0;
         transition: 0.4s ease;
+        visibility: hidden;
     }
 
     .news__header__nav__menu {
@@ -169,5 +174,10 @@
 
     .open__overlay {
         opacity: .6;
+        visibility: visible;
+    }
+
+    .overflow {
+        overflow: hidden;
     }
 }
