@@ -170,14 +170,11 @@
 
     .opacity__items__menu {
         opacity: 1;
+        transition: 2s ease;
     }
 
     .open__overlay {
         opacity: .6;
         visibility: visible;
-    }
-
-    .overflow {
-        overflow: hidden;
     }
 }
